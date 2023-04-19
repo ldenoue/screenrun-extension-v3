@@ -1,6 +1,6 @@
 # ScreenRun
 
-ScreenRun is a browser extension to quickly record your tab and voice.
+ScreenRun is a browser extension to record your clicks.
 
 Tested on Chrome. Thanks for letting me know if it works in other browsers.
 
