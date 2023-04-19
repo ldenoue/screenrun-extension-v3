@@ -1,29 +1,24 @@
 {
-    "name": "screenrun-extension",
-    "version": "1.0.0",
-    "description": "ScreenRun Tab Recorder",
+    "name": "ScreenRun",
+    "author": "ScreenRun LLC",
     "manifest_version": 3,
-    "options_page": "options.html",
+    "version": "1.1.0",
+    "description": "Quickly record a video of your tab with your voice and clicks and import into ScreenRun.app",
+    "options_page": "welcome.html",
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": [
-        "activeTab",
-        "downloads",
-        "storage",
-        "tabCapture",
-        "tabs"
-    ],
+    "permissions": ["tabs"],
     "content_scripts": [
         {
           "matches": ["http://localhost:8080/studio", "https://screenrun.app/studio"],
-          "js": ["fetch.js"],
+          "js": ["screenrun.js"],
           "all_frames": false,
           "run_at": "document_end"
         },
         {
             "matches": ["<all_urls>"],
-            "js": ["inject.js"],
+            "js": ["content.js"],
             "all_frames": false,
             "run_at": "document_end"
           }
