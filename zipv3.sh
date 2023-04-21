@@ -1,1 +1,1 @@
-zip -vr screenrun-v3.zip manifest.json background.js inject.js fetch.js options.html options.js icons/on.png icons/off.png
+zip -vr screenrun-v3.zip manifest.json background.js content.js screenrun.js welcome.html icons/on.png icons/off.png
