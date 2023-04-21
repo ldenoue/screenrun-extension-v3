@@ -2,7 +2,7 @@
     "name": "ScreenRun",
     "author": "ScreenRun LLC",
     "manifest_version": 3,
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Quickly record a video of your tab with your voice and clicks and import into ScreenRun.app",
     "options_page": "welcome.html",
     "background": {
