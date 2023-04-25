@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.type === 'id')
   {
     studioTabId = sender.tab.id
-  }
+  }   
   else if (request.type === 'click' || request.type === 'move') {
     if (studioTabId)
       chrome.tabs.sendMessage(studioTabId, request)

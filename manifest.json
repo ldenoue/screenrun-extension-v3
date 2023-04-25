@@ -8,7 +8,7 @@
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["tabs"],
+    "permissions": [],
     "content_scripts": [
         {
           "matches": ["http://localhost:8080/studio", "https://screenrun.app/studio"],
